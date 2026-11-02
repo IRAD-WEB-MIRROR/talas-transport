@@ -1,0 +1,110 @@
+/* MP Talas Shaar Avtobus Parky - style 2009 (rev. 2013) */
+body{margin:0;background:#d9d2bd url(bg.png);font:12px/1.5 Tahoma,Verdana,"DejaVu Sans",Arial,sans-serif;color:#222}
+a{color:#a31d16}
+a:hover{color:#e0501b}
+#page{width:990px;margin:10px auto;background:#fffdf6;border:1px solid #b9ae8e;box-shadow:0 0 8px rgba(0,0,0,.25)}
+#hdr{height:96px;background:linear-gradient(#c8341f,#8f1712 70%,#7a120e);border-bottom:4px solid #f2c200;position:relative;color:#fff}
+#hdr .logo{position:absolute;left:14px;top:10px}
+#hdr .logo img{border:0;border-radius:50%;box-shadow:0 0 0 3px rgba(255,255,255,.35)}
+#hdr .ttl{position:absolute;left:104px;top:20px;right:220px}
+#hdr .ttl b{display:block;font:bold 27px/1.1 Georgia,"Times New Roman",serif;letter-spacing:.5px;text-shadow:1px 1px 0 #4a0806}
+#hdr .ttl span{font-size:11px;color:#ffd9cf}
+#hdr .disp{position:absolute;right:14px;top:14px;width:170px;background:#f2c200;color:#3a2a00;border:1px solid #a88400;padding:5px 8px;font-size:11px;transform:rotate(1.5deg);box-shadow:2px 2px 0 rgba(0,0,0,.3)}
+#hdr .disp b{display:block;font:bold 24px/1.1 "Courier New",monospace;color:#7a120e}
+#hdr .disp small{display:block;font-size:10px}
+#menu{background:linear-gradient(#f4f4f4,#d4d4d4 50%,#c4c4c4 51%,#dedede);border-bottom:1px solid #999;padding:0 6px;white-space:nowrap;overflow:hidden}
+#menu a{display:inline-block;padding:7px 10px;color:#333;text-decoration:none;font-weight:bold;font-size:11px;border-right:1px solid #aaa;text-shadow:0 1px 0 #fff}
+#menu a:hover,#menu a.on{background:linear-gradient(#fff,#ffe9a8);color:#8f1712}
+.mbtn{display:none}
+#run{background:#fff5cc;border-bottom:1px solid #e0c060;padding:3px 8px;font-size:11px;display:flex;gap:6px;align-items:center}
+#run b{color:#c00;white-space:nowrap}
+#run marquee{flex:1}
+#cols{display:flex}
+#left{width:200px;flex:none;padding:10px;background:#f3eedc;border-right:1px solid #ddd3b3}
+#main{flex:1;padding:12px 18px 20px;min-width:0}
+.box{background:#fff;border:1px solid #cfc3a0;margin-bottom:10px;padding:0 8px 6px}
+.box h3{margin:0 -8px 6px;padding:3px 8px;background:linear-gradient(#b02a1c,#86160f);color:#fff;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.box ul{margin:0;padding-left:16px}
+.box input{width:60px;font-size:12px}
+#ttnow{font:bold 20px/1.1 Georgia,serif;text-align:center;padding:8px 0;border:2px dashed;margin:2px 0 4px}
+#ttnow small{display:block;font:11px Tahoma,sans-serif}
+#ttnow.summer{color:#2e7d24;background:#effbe8}
+#ttnow.winter{color:#1d5a99;background:#e8f2fc}
+#ttnote{font-size:11px;margin:4px 0}
+.ctr{text-align:center}
+.ctr span{display:block;font-size:10px;color:#666}
+.ctr b{display:inline-block;background:#000;color:#4cff4c;font:bold 14px "Courier New",monospace;padding:2px 6px;letter-spacing:2px;margin:3px 0}
+.ctr small{display:block;font-size:10px;color:#666}
+.sm{font-size:11px;color:#666}
+h1{font:bold 20px Georgia,"Times New Roman",serif;color:#8f1712;margin:4px 0 10px;border-bottom:2px solid #f2c200;padding-bottom:4px}
+h2{font:bold 15px Georgia,serif;color:#8f1712;margin:18px 0 8px}
+h3{font-size:13px;margin:6px 0}
+h4{font-size:12px;margin:4px 0}
+.welcome{overflow:hidden}
+.welcome img{float:right;margin:0 0 8px 12px;border:1px solid #999;padding:3px;background:#fff;max-width:45%;height:auto}
+.news{border-bottom:1px dotted #bbb;padding:6px 0}
+.news p{margin:3px 0}
+.d{color:#fff;background:#8f1712;font-size:10px;padding:1px 4px;font-weight:bold}
+ul.dl{padding-left:0;list-style:none}
+ul.dl li{margin:4px 0}
+table.list,table.info,table.grid{border-collapse:collapse;width:100%;margin:6px 0}
+table.list th{background:linear-gradient(#b02a1c,#86160f);color:#fff;text-align:left;padding:4px 6px;font-size:11px}
+table.list td{border-bottom:1px solid #e3dcc6;padding:4px 6px;vertical-align:top}
+table.list tr:nth-child(even) td{background:#faf6e8}
+table.list tr.off td{color:#999}
+table.info th{text-align:left;width:150px;background:#f3eedc;padding:4px 6px;border:1px solid #ddd3b3;vertical-align:top}
+table.info td{padding:4px 6px;border:1px solid #ddd3b3}
+td.c{text-align:center}
+small{color:#777}
+.rn{display:inline-block;min-width:22px;text-align:center;font-weight:bold;text-decoration:none;padding:1px 3px;margin:1px;border-radius:3px;font-size:11px}
+.rb{background:#1f5fa8;color:#fff!important}
+.rm{background:#f2c200;color:#222!important;border:1px solid #c29a00}
+.big{font-size:20px;padding:2px 10px;border-radius:4px;vertical-align:middle}
+.note{background:#fff8d8;border:1px solid #e6cf6c;padding:6px 8px}
+.note.snow{background:#e8f2fc;border-color:#9cbfe6}
+.alert{background:#fdecea;border:1px solid #e3a49c;padding:8px 10px;margin:8px 0}
+.red{color:#c00}
+.tt{border:1px solid #ddd3b3;margin:10px 0;padding:6px 10px;background:#fff}
+.tt .cur{display:none;background:#2e7d24;color:#fff;font-size:10px;padding:1px 5px;margin-left:6px;vertical-align:middle}
+.tt.now{border:2px solid #2e7d24}
+.tt.now .cur{display:inline}
+.tt.notnow{opacity:.55}
+.two{display:flex;gap:16px}
+.two>div{flex:1}
+table.grid th{width:30px;background:#eee;border:1px solid #ccc;font:bold 11px "Courier New",monospace}
+table.grid td{border:1px solid #ccc;font:11px "Courier New",monospace;padding:2px 4px;word-spacing:3px}
+.crumb{font-size:11px;color:#777;margin:0 0 6px}
+.finder{background:#f3eedc;border:1px solid #ddd3b3;padding:8px}
+.finder select{max-width:200px}
+.fbox{border:1px solid #9cbfe6;background:#f3f8fd;padding:6px 10px;margin:8px 0}
+.notice{border-bottom:1px dotted #bbb;padding:8px 0}
+.notice p{margin:4px 0}
+.old{background:#999;color:#fff;font-size:10px;padding:1px 4px}
+tr.claimed td{text-decoration:line-through;color:#999}
+.info2{background:#f3eedc;border:1px solid #ddd3b3;padding:4px 10px}
+.mapwrap{border:1px solid #b9ae8e;overflow:auto}
+.map{width:100%;height:auto;display:block;min-width:620px}
+.legend .lg{display:inline-block;margin:2px 8px 2px 0}
+.legend i{display:inline-block;width:18px;height:4px;vertical-align:middle;margin-right:3px}
+.hist li{margin:4px 0}
+#ftr{border-top:4px solid #f2c200;background:#4a4a4a;color:#ddd;padding:8px 14px;font-size:11px}
+#ftr p{margin:3px 0}
+#ftr .sm{color:#bbb}
+#ftr a{color:#ffd76a}
+@media (max-width:1000px){
+ #page{width:auto;margin:0;border:0}
+ #cols{flex-direction:column-reverse}
+ #left{width:auto;border-right:0;border-top:1px solid #ddd3b3}
+ #hdr{height:auto;padding:10px 12px 12px 86px;min-height:70px}
+ #hdr .logo{left:10px;top:10px}#hdr .logo img{width:62px;height:62px}
+ #hdr .ttl{position:static}
+ #hdr .ttl b{font-size:20px}
+ #hdr .disp{position:static;transform:none;margin-top:8px;width:auto;display:inline-block}
+ .mbtn{display:block;width:100%;text-align:left;border:0;background:#ddd;padding:8px 12px;font:bold 13px Tahoma,sans-serif}
+ #menu{display:none;white-space:normal}#menu.open{display:block}
+ #menu a{display:block;border-right:0;border-bottom:1px solid #bbb}
+ #main{padding:10px 12px}
+ .two{flex-direction:column}
+ .welcome img{float:none;max-width:100%;margin:0 0 8px}
+ table.info th{width:auto}
+}
