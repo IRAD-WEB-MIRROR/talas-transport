@@ -23,16 +23,28 @@ function apply(s){
  var cur=w?'tt-winter':'tt-summer',oth=w?'tt-summer':'tt-winter';
  [].forEach.call(document.querySelectorAll('.'+cur),function(e){e.classList.add('now');});
  [].forEach.call(document.querySelectorAll('.'+oth),function(e){e.classList.remove('now');e.classList.add('notnow');});
- if(s.snow){
+ if(s.snow&&!INC){
   var sb=$('snowbox');if(sb){sb.hidden=false;sb.innerHTML='<b>Snow in Talas today.</b> Buses 10 and 16 and the marshrutkas to Alatau Heights may turn short of Alatau Heights while the road above the Conservatory is cleared. Dispatcher: 41-15-15.';}
   var sr=$('snowroute');if(sr)sr.hidden=false;
  }
 }
 var SNOW=[71,73,75,77,85,86];
+/* today's incidents (the Governor's daily figures carry one list for every site): a burst main or a snowstorm that
+   moves the buses. The box on the home page and the line on each route page it touches; the snow line gives way to it. */
+var INC=false;
+function incidents(d){
+ var now=Date.now(),l=(d.incidents&&d.incidents.list||[]).filter(function(x){return x.bus&&Date.parse(x.start)<=now+3*3600000&&(!x.end||now<Date.parse(x.end));});
+ if(!l.length)return;
+ INC=true;
+ var sb=$('snowbox');if(sb){sb.hidden=false;sb.innerHTML=l.map(function(x){return '<b>'+esc(x.title.en)+'.</b> '+esc(x.bus.text.en);}).join('<br>')+' Dispatcher: 41-15-15.';}
+ var ir=$('incroute');if(ir){var no=ir.getAttribute('data-no'),hit=l.filter(function(x){return x.bus.routes.indexOf(no)>=0;});
+  if(hit.length){ir.hidden=false;ir.innerHTML=hit.map(function(x){return '<b>Today:</b> '+esc(x.bus.text.en);}).join('<br>');var sr=$('snowroute');if(sr)sr.hidden=true;}}
+}
 function season(){
  var s=fallback();apply(s);
  if(!window.fetch)return;
  fetch('https://iradgov.org/data/today.json').then(function(r){return r.json();}).then(function(d){
+  incidents(d);
   if(!d.season)return;
   var p=(d.weather&&d.weather.places||[]).filter(function(x){return x.id==='talas';})[0];
   var snow=!!(p&&(SNOW.indexOf(p.code)>=0||/snow/i.test(p.label&&p.label.en||'')));
