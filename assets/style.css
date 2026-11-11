@@ -150,3 +150,6 @@ html.vi a{color:#000;text-decoration:underline}
  .hero h1{font-size:27px}
  .sn{margin-left:0}
 }
+
+/* photos on the inner pages */
+.ph{float:right;width:320px;max-width:46%;margin:2px 0 10px 16px;padding:0;border:0;display:block}.ph img{display:block;width:100%;height:auto;border:1px solid #bbb;padding:2px;background:#fff;box-sizing:border-box}.ph figcaption{font-size:12px;line-height:1.35;color:#555;margin-top:4px}.ph~h2,.ph~h3,.ph~table,.ph~.table{clear:right}@media (max-width:640px){.ph{float:none;width:100%;max-width:100%;margin:0 0 12px}}
